@@ -15,7 +15,7 @@ if (localStorage.getItem("userInfo") != null) {
 let flag =true;
 function checkEmail() {
    for (let i = 0; i < usersList.length; i++) {
-      if (usersList[i].email.toLowerCase() == emailInput.value.toLowerCase()) {
+      if (usersList[i].email == emailInput.value) {
          return true;
       }else{
          return false;
