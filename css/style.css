@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-bg-color: #24353f;
+    --main-color: #17a2b8;
+}
+body{
+    background-color:var(--main-bg-color);
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.2;
+    
+}
+.main, .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid { 
+    background-color:var(--main-bg-color);
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    
+}
+
+h1{
+   font-family: 'Roboto', sans-serif;;
+    color: var(--main-color);
+    font-weight: 400;
+}
+.main .btn-outline-info:hover{
+    color: #fff;
+    background-color: var(--main-color);
+   
+}
+p{
+   font-weight: 400;
+   font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.main a:hover{
+text-decoration: underline;
+}
+.main input.form-control::placeholder{
+    color: #d8d8d8
+}
+
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
