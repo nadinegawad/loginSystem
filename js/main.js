@@ -15,7 +15,7 @@ if (localStorage.getItem("userInfo") != null) {
 let flag =true;
 function checkEmail() {
    for (let i = 0; i < usersList.length; i++) {
-      if (usersList[i].email == emailInput.value) {
+      if (usersList[i].email.toLowerCase() == emailInput.value.toLowerCase()) {
          return true;
       }else{
          return false;
@@ -54,7 +54,6 @@ function login() {
       let emailInput = document.querySelector("#emailInput");
       if (usersList[i].email == emailInput.value && usersList[i].password == passwordInput.value) {
          localStorage.setItem('userName',usersList[i].userName);
-
          location.href = 'welcome.html';
        }else{
          document.querySelector("#wrongSign").innerHTML = `<p class= 'text-danger fs-5'>All inputs is required </p>`;
